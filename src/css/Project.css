@@ -1,0 +1,158 @@
+.section{
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.portfolio-container{
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+.portfolio-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.portfolio-sec2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.project-background{
+    /* width: 40vw;
+    height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 8%;
+    /* background: #D2BBE9; */
+
+}
+
+.project-img{
+    margin-top: 11%;
+    /* width: 40vw;
+    height: 55vh; */
+}
+
+.paragh1{
+    width: 400px;
+    line-height: 36px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.project-background2{
+    /* width: 40vw;
+    height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 7%;
+    /* background: #FFE0E0; */
+
+}
+
+
+.websit-link a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.company-name{
+    line-height: 20px;
+}
+
+.project-background3{
+    /* width: 40vw;
+    height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 7%;
+    /* background: #FFE9AE; */
+
+}
+
+.project-para{
+    margin-top: 8%;
+}
+@media(max-width: 1024px){
+    .project-img{
+        width: 35vw;
+        height: 25vh;
+    }
+
+   
+}
+
+@media(max-height: 600px){
+    .project-img{
+        height: 55vh;
+    }
+  }
+
+
+@media(max-width: 550px){
+    
+
+    .project-img{
+        width: 72vw;
+        height: 30vh;
+    }
+    .portfolio-sec{
+        flex-direction: column;
+    }
+
+    .portfolio-sec2{
+        flex-direction: column-reverse;
+    }
+
+    .paragh1{
+        line-height: normal;
+        font-size: 12px;
+        width: 315px;
+    }
+
+    .project-para{
+        margin-left: 30px;
+        margin-top: -1%;
+    }
+
+    .portfolio-container{
+        margin-top: -50%;
+    }
+
+   
+}
+
+
+
+@media(max-width: 380px){
+   
+    .paragh1{
+        width: 280px;
+    }
+    .project-img{
+        width: 75vw;
+        height: 35vh;
+    }
+}
+
+
+@media(max-width: 290px){
+    .paragh1{
+        width: 241px;
+    }
+}

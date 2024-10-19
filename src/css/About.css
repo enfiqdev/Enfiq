@@ -1,0 +1,322 @@
+.about-sec {
+  height: 85vh;
+  background: #222222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-heading {
+  width: 30vw;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.paraTag2 {
+  width: 30vw;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 20px;
+
+  color: white;
+}
+
+.lists {
+  font-family: Inter;
+  color: white;
+  width: 30vw;
+  margin-left: -10px;
+  font-weight: 300;
+}
+
+.join-btn {
+  width: 146px;
+  height: 46px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+
+.image-sec {
+  width: 35vw;
+  height: 60vh;
+  border-radius: 17px;
+  background: #393939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  width: 30vw;
+  height: 40vh;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #222222;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #222222);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #222222);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+.tag-sec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.tag-line {
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: -1px;
+  width: 332px;
+  margin: 100px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.talk-btn {
+  position: relative;
+  width: 110px;
+  /* height: 48px; */
+  border-radius: 8px;
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 140px 100px 120px 0;
+  background: #000000;
+}
+
+.services-sec {
+  width: 60vh;
+}
+
+.services-img {
+  width: 55vmin;
+  margin-left: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+
+#Unleash {
+  /* margin-top: -15px; */
+  text-align: center;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1030px) {
+  .services {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .services-img {
+    width: 30vmin;
+    margin-left: 0px;
+
+  }
+}
+
+
+
+@media(max-width: 1024px){
+
+  .about-sec{
+    height: 60vh;
+  }
+
+    .about-heading{
+        width: 50vw;
+    }
+
+    .paraTag2{
+        width: 46vw;
+    }
+
+    .image-sec{
+        height: 40vh;
+    }
+
+    .about-img{
+        height: 30vh;
+    }
+
+
+    
+
+}
+
+@media(max-height: 600px){
+  .about-sec{
+    height: 85vh;
+  }
+}
+
+
+
+@media(max-width: 555px){
+
+  .about-sec{
+    height: 85vh;
+    flex-direction: column-reverse;
+    align-items: normal;
+    padding: 2rem;
+
+  }
+
+  
+
+  .about-heading{
+    width: 70vw;
+    font-size: 25px;
+    letter-spacing: 0;
+  }
+
+  .paraTag2{
+    width: 60vw;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .lists{
+    font-size: 13px;
+    width: 53vw;
+    margin-left: -28px;
+  }
+
+  .image-sec{
+    width: 85vw;
+    height: 35vh;
+  }
+
+  .about-img{
+    height: 30vh;
+    width: 75vw;
+  }
+
+
+  .services {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
+    }
+    .services-img {
+      width: 80vmin;
+      padding-bottom: 20px;
+    }
+  
+    .tag-line{
+      font-size: 21px;
+      margin: 30px;
+  
+    }
+  
+    .talk-btn{
+      margin: -20px 0 0 32px;
+    }
+
+    #Unleash {
+      margin-top: -15px;
+      
+    }
+
+   
+    
+}
+
+@media(max-width: 300px){
+
+  .about-container{
+    margin-left: -10px;
+  }
+
+  .about-heading{
+    font-size: 17px;
+  }
+
+  .paraTag2{
+    width: 66vw;
+    font-size: 10px;
+    line-height: 14px;
+
+  }
+
+  .lists{
+    font-size: 10px;
+  }
+
+  /* .join-btn{
+    width: 118px;
+  } */
+}
